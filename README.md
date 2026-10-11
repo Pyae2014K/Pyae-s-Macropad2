@@ -43,8 +43,8 @@ This macropad uses [QMK](https://qmk.fm/) firmware for its code.
 - Rotary encoder used to change volume
 - Per-key LEDs
 
-  ## BOM:
-  Here is everything that is needed to make this macropad
+## BOM:
+Here is everything that is needed to make this macropad
 | Qty | Part | Description |
 |-----:|------|-------------|
 | 1 | Seeed XIAO RP2040 | Microcontroller |
