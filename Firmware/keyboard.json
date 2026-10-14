@@ -1,0 +1,72 @@
+{
+    "manufacturer": "Pyae Kyaw",
+    "keyboard_name": "pyaes_macropad",
+    "maintainer": "Pyae2014K",
+    "bootloader": "rp2040",
+    "board": "GENERIC_RP_RP2040",
+    "diode_direction": "COL2ROW",
+    "features": {
+        "bootmagic": true,
+        "extrakey": true,
+        "mousekey": true,
+        "nkro": true
+    },
+    "matrix_pins": {
+        "rows": ["GP26", "GP27", "GP28", "GP29", "GP6"],
+        "cols": ["GP3", "GP4", "GP2"]
+    },
+    "encoder": {
+        "rotary": [{"pin_a": "GP7","pin_b": "GP0"}]
+    },
+    "ws2812": {
+        "pin": "GP1",
+        "driver": "vendor"
+    },
+    "rgb_matrix": {
+        "driver": "ws2812",
+        "max_brightness": 120,
+        "layout": [
+            {"x": 0,   "y": 0,  "flags": 4, "matrix": [0, 0]},
+            {"x": 224, "y": 0,  "flags": 4, "matrix": [0, 2]},
+            {"x": 0,   "y": 16, "flags": 4, "matrix": [1, 0]},
+            {"x": 112, "y": 16, "flags": 4, "matrix": [1, 1]},
+            {"x": 224, "y": 16, "flags": 4, "matrix": [1, 2]},
+            {"x": 0,   "y": 32, "flags": 4, "matrix": [2, 0]},
+            {"x": 112, "y": 32, "flags": 4, "matrix": [2, 1]},
+            {"x": 224, "y": 32, "flags": 4, "matrix": [2, 2]},
+            {"x": 0,   "y": 48, "flags": 4, "matrix": [3, 0]},
+            {"x": 112, "y": 48, "flags": 4, "matrix": [3, 1]},
+            {"x": 224, "y": 48, "flags": 4, "matrix": [3, 2]},
+            {"x": 0,   "y": 64, "flags": 4, "matrix": [4, 0]},
+            {"x": 112, "y": 64, "flags": 4, "matrix": [4, 1]},
+            {"x": 224, "y": 64, "flags": 4, "matrix": [4, 2]}
+        ]
+    },
+    "processor": "RP2040",
+    "usb": {
+        "device_version": "1.0.0",
+        "pid": "0x0002",
+        "vid": "0x706B"
+    },
+    "layouts": {
+        "LAYOUT_ortho_5x3": {
+            "layout": [
+                {"matrix": [0, 0], "x": 0, "y": 0},
+                {"matrix": [0, 1], "x": 1, "y": 0},
+                {"matrix": [0, 2], "x": 2, "y": 0},
+                {"matrix": [1, 0], "x": 0, "y": 1},
+                {"matrix": [1, 1], "x": 1, "y": 1},
+                {"matrix": [1, 2], "x": 2, "y": 1},
+                {"matrix": [2, 0], "x": 0, "y": 2},
+                {"matrix": [2, 1], "x": 1, "y": 2},
+                {"matrix": [2, 2], "x": 2, "y": 2},
+                {"matrix": [3, 0], "x": 0, "y": 3},
+                {"matrix": [3, 1], "x": 1, "y": 3},
+                {"matrix": [3, 2], "x": 2, "y": 3},
+                {"matrix": [4, 0], "x": 0, "y": 4},
+                {"matrix": [4, 1], "x": 1, "y": 4},
+                {"matrix": [4, 2], "x": 2, "y": 4}
+            ]
+        }
+    }
+}
